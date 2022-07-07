@@ -16,6 +16,7 @@ import { NavSectionVertical } from '../../../components/nav-section'
 import navConfig from './NavConfig'
 import NavbarAccount from './NavbarAccount'
 import CollapseButton from './CollapseButton'
+import { BreakfastDining } from '@mui/icons-material'
 
 // ----------------------------------------------------------------------
 
@@ -85,7 +86,7 @@ export default function NavbarVertical({
           alignItems="center"
           justifyContent="space-between"
         >
-          <h1>BC</h1>
+          <BreakfastDining/>
 
           {!isCollapse && (
             <CollapseButton

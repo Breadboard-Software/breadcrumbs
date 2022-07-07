@@ -51,7 +51,7 @@ export default function NavbarAccount({ isCollapse }: Props) {
             {"Admin User"}
           </Typography>
           <Typography variant="body2" noWrap sx={{ color: 'text.secondary' }}>
-            Breadboard {/* TODO: update this once user company is created */}
+            Breadcrumbs
           </Typography>
         </Box>
       </RootStyle>
