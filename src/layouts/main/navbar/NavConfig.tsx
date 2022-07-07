@@ -22,23 +22,14 @@ const navConfig = [
   // GENERAL
   // ----------------------------------------------------------------------
   {
-    subheader: 'General',
+    subheader: 'BreadCrumbs',
     items: [
       {
         title: 'My Dashboard',
         path: '/dashboard',
         icon: ICONS.dashboardItem,
       },
-      {
-        title: 'Projects',
-        path: '/projects',
-        icon: ICONS.projectsItem,
-      },
-      {
-        title: 'Bill of Materials',
-        path: '/bom-management',
-        icon: ICONS.bomItem,
-      },
+    
     ],
   },
   // MANAGEMENT

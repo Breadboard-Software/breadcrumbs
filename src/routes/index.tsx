@@ -9,12 +9,8 @@ import LoadingScreen from '../components/LoadingScreen'
 // ----------------------------------------------------------------------
 
 const Loadable = (Component: ElementType) => (props: any) => {
-  // FIXME: this is a react component but eslint doesn't agree
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const { pathname } = useLocation()
-
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-
   return (
     <Suspense
       fallback={
@@ -31,12 +27,12 @@ const Loadable = (Component: ElementType) => (props: any) => {
 export default function Router() {
   return useRoutes([
     {
-      path: '/breadcrumbs',
+      path: '/crumb-builder',
       element: (
           <MainLayout />
       ),
       children: [     {
-        element: <Breadcrumbs />,
+        element: <CrumbBuilder />,
         index: true,
       },],
     },
@@ -45,5 +41,5 @@ export default function Router() {
   ])
 }
 
-const Breadcrumbs = Loadable(lazy(() => import('../pages/Breadcrumbs')))
+const CrumbBuilder = Loadable(lazy(() => import('../pages/CrumbBuilder')))
 const NotFound = Loadable(lazy(() => import('../pages/Page404')))
