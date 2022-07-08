@@ -25,6 +25,10 @@ const Loadable = (Component: ElementType) => (props: any) => {
 export default function Router() {
   return useRoutes([
     {
+      path: '/',
+      element: <Navigate to="/crumb-builder" replace />,
+    },
+    {
       path: '/crumb-builder',
       element: <MainLayout />,
       children: [

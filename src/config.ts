@@ -1,4 +1,3 @@
-
 // LAYOUT
 // ----------------------------------------------------------------------
 
@@ -36,5 +35,3 @@ export const defaultSettings = {
   themeColorPresets: 'default',
   themeStretch: true,
 }
-
-
