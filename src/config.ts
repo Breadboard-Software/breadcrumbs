@@ -1,22 +1,3 @@
-// routes
-import { PATH_BOM_MANAGEMENT } from './routes/paths'
-
-
-// API
-// ----------------------------------------------------------------------
-
-export const HOST_API = process.env.REACT_APP_HOST_API_KEY || ''
-
-export const AUTH0_API = {
-  clientId: process.env.REACT_APP_AUTH_CLIENT_ID,
-  domain: process.env.REACT_APP_AUTH_DOMAIN,
-  redirectUri: process.env.REACT_APP_AUTH_REDIRECT_URI,
-  scope: process.env.REACT_APP_AUTH_SCOPE,
-  response_type: process.env.REACT_APP_RESPONSE_TYPE,
-}
-
-// ROOT PATH AFTER LOGIN SUCCESSFUL
-export const PATH_AFTER_LOGIN = PATH_BOM_MANAGEMENT.bom.upload
 
 // LAYOUT
 // ----------------------------------------------------------------------

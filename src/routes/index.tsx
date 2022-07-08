@@ -14,9 +14,7 @@ const Loadable = (Component: ElementType) => (props: any) => {
   return (
     <Suspense
       fallback={
-        <LoadingScreen
-          isDashboard={pathname.includes('/breadcrumbs')}
-        />
+        <LoadingScreen isDashboard={pathname.includes('/crumb-builder')} />
       }
     >
       <Component {...props} />
@@ -28,15 +26,14 @@ export default function Router() {
   return useRoutes([
     {
       path: '/crumb-builder',
-      element: (
-          <MainLayout />
-      ),
-      children: [     {
-        element: <CrumbBuilder />,
-        index: true,
-      },],
+      element: <MainLayout />,
+      children: [
+        {
+          element: <CrumbBuilder />,
+          index: true,
+        },
+      ],
     },
-
     { path: '*', element: <Navigate to="/404" replace /> },
   ])
 }
